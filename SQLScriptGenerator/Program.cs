@@ -102,7 +102,7 @@ namespace SQLScriptGenerator
                 $"= '{split[1]}' AND R.ROUTINE_SCHEMA = '{split[0]}') {Environment.NewLine} DROP {drop} [{split[0]}].[{split[1]}] {Environment.NewLine} GO {Environment.NewLine}";
 
             data.Insert(0, template);
-            data.Add($"GO {Environment.NewLine}");
+            data.Add($"{Environment.NewLine}GO{Environment.NewLine}");
 
             return data;
         }
