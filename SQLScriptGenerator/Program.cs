@@ -61,7 +61,7 @@ namespace SQLScriptGenerator
             }
 
             Log($"Finished, press enter to exit");
-            Console.ReadLine();
+            Console.ReadKey();
         }
 
         private static List<string> GetResultOfFunction(string name)
